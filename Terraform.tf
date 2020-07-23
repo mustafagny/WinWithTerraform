@@ -132,7 +132,7 @@ resource "aws_instance" "web" {
     connection {
         type = "rdp"
         host = self.public_ip
-        user = "ec2-user"
+        user = "administartor"
         private_key = file(var.private_key_path)
     }
 }
